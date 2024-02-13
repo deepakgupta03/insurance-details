@@ -1,0 +1,14 @@
+<div class="insurance-list">
+    <h2>My Insurances</h2>
+    <ul>
+      <li *ngFor="let insurance of insurances">
+        <div class="insurance-item" (click)="viewInsuranceDetails(insurance)">
+          <h3>{{ insurance?.name }}</h3>
+          <p>Type: {{ insurance?.type }}</p>
+          <p>Policy Number: {{ insurance?.policyNumber }}</p>
+          <p>Expiration Date: {{ insurance?.expirationDate }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
